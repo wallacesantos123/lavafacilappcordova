@@ -1,0 +1,31 @@
+body {
+    margin: 0 auto;
+}
+
+#container #lavagens {
+    width: 20%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    float: left;
+}
+
+#container #lavarapidos {
+    width: 20%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    float: left;
+}
+
+#container #historico {
+    width: 20%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    float: left;
+}
+
+#container #configuracoes {
+    width: 20%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    float: left;
+}
