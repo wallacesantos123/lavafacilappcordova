@@ -28,13 +28,16 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <link rel="stylesheet" href="css/menu.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/map.css" />-->
+        <link rel="stylesheet" href="css/menu.css?v=0">
+        <script type="module" src="js/map.js"></script>
         <title>LavaFacilApp - Menu</title>
     </head>
+
     <body>
         <div id="container">
              <div id="lavagens">
@@ -42,7 +45,7 @@
              </div>
 
              <div id="lavarapidos">
-                <label>Lava-Rapidos</label>
+                <label>Lava-Rap</label>
              </div>
 
              <div id="historico">
@@ -50,8 +53,14 @@
              </div>
 
              <div id="configuracoes">
-                <label>Configurações</label>
+                <label>Config</label>
              </div>
-        </div>
+
+             <div id="map">
+                <!-- prettier-ignore -->
+                <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+                ({key: "AIzaSyBayrxHEUwi2fvhi1utszGIgkdNp0ZD9Ow", v: "weekly"});</script>
+             </div>
+        </div>  
     </body>
 </html>

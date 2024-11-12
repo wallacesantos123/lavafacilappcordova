@@ -33,7 +33,7 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/login.css?v=0">
+        <link rel="stylesheet" href="css/login.css?v=1">
         <title>LavaFacilApp - Login</title>
     </head>
     <body>

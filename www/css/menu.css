@@ -1,31 +1,56 @@
+html {
+    margin: 0%;
+}
+
 body {
-    margin: 0 auto;
+    margin: 0%;
+    border: 1px solid #000;
+    overflow-x: hidden;
 }
 
 #container #lavagens {
-    width: 20%;
-    border: 2px solid #000;
-    border-radius: 5px;
+    width: 24.5%;
     float: left;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    font-weight: bolder;
+    border-right: 1px solid #000;
 }
 
 #container #lavarapidos {
-    width: 20%;
-    border: 2px solid #000;
-    border-radius: 5px;
+    width: 24.5%;
     float: left;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    font-weight: bolder;
+    border-right: 1px solid #000;
 }
 
 #container #historico {
-    width: 20%;
-    border: 2px solid #000;
-    border-radius: 5px;
+    width: 24.4%;
     float: left;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    font-weight: bolder;
+    border-right: 1px solid #000;
 }
 
 #container #configuracoes {
-    width: 20%;
-    border: 2px solid #000;
-    border-radius: 5px;
+    width: 24.4%;
     float: left;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    font-weight: bolder;
+}
+
+#container #map {
+    width: 100%;
+    margin-top: 20%;
+    padding-bottom: 150%;
+    position: absolute;
+    border-top: 1px solid #000;
 }

@@ -22,6 +22,7 @@
     height: 100%;
     margin: 0%;
     background-color: #FFF;
+    overflow-x: hidden;
 }
 
 #container {
