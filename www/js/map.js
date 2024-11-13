@@ -1,31 +1,9 @@
-//imports
-import { useEffect } from 'react';
-
 // Initialize and add the map
 let map;
 
 async function initMap() {
-  const { myPosition, setMyPosition } = useEffect("");
-
-  if(navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const pos = {
-          lat: position.coords.latitude,
-          lat: position.coords.longitude,
-        };
-        //Posiçao Atual
-        setMyPosition = pos;
-      },
-      () => {
-        handleLocationError(true, infoWindow, map.getCenter());
-      },
-    );
-  } else {
-    // Browser doesn't support Geolocation
-    handleLocationError(false, infoWindow, map.getCenter());
-  }
-  
+  // The location of Uluru
+  const position = { lat: -23.498500, lng: -46.359450 };
   // Request needed libraries.
   //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
@@ -33,7 +11,7 @@ async function initMap() {
 
   // The map, centered at Uluru
   map = new Map(document.getElementById("map"), {
-    zoom: 14,
+    zoom: 17,
     center: position,
     mapId: "7600f97313a40973",
     disableDefaultUI: true,
