@@ -1,9 +1,31 @@
+//imports
+import { useEffect } from 'react';
+
 // Initialize and add the map
 let map;
 
 async function initMap() {
-  // The location of Uluru
-  const position = { lat: -25.344, lng: 131.031 };
+  const { myPosition, setMyPosition } = useEffect("");
+
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const pos = {
+          lat: position.coords.latitude,
+          lat: position.coords.longitude,
+        };
+        //Posiçao Atual
+        setMyPosition = pos;
+      },
+      () => {
+        handleLocationError(true, infoWindow, map.getCenter());
+      },
+    );
+  } else {
+    // Browser doesn't support Geolocation
+    handleLocationError(false, infoWindow, map.getCenter());
+  }
+  
   // Request needed libraries.
   //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
@@ -11,9 +33,10 @@ async function initMap() {
 
   // The map, centered at Uluru
   map = new Map(document.getElementById("map"), {
-    zoom: 4,
+    zoom: 14,
     center: position,
-    mapId: "DEMO_MAP_ID",
+    mapId: "7600f97313a40973",
+    disableDefaultUI: true,
   });
 
   // The marker, positioned at Uluru
@@ -23,5 +46,3 @@ async function initMap() {
     title: "Uluru",
   });
 }
-
-initMap();
