@@ -33,40 +33,29 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <!--<link rel="stylesheet" type="text/css" href="css/map.css" />-->
-        <link rel="stylesheet" href="css/menu.css?v=1">
-        <script src="js/map.js"></script>
-        <script src="js/map_conf.js"></script>
-        <title>LavaFacilApp - Menu</title>
+        <link rel="stylesheet" href="css/lavagens.css">
+        <title>LavaFacilApp - Lavagens</title>
     </head>
 
     <body>
         <div id="container">
-             <a href="lavagens.php">
-                <div id="lavagens">
-                    <label>Lavagens</label>
-                </div>
-             </a>
-            
-             <a href="lava_rapidos.php">
-                <div id="lavarapidos">
-                    <label>Lava-Rap</label>
-                </div>
-             </a>
-             
-             <div id="historico">
-                <label>Historico</label>
-             </div>
+            <div id="ducha">
+                <img src="img/logo.png" id="logo">
+                <span id="preco">DUCHA <br> R$10,00</span>
+                <img src="img/informacao.png" id="info">
+            </div>
 
-             <div id="configuracoes">
-                <label>Config</label>
-             </div>
+            <div id="simples">
+                <img src="img/logo.png" id="logo">
+                <span id="preco">SIMPLES <br> R$20,00</span>
+                <img src="img/informacao.png" id="info">
+            </div>
 
-             <div id="map">
-                <script>
-                    mapConf();
-                    initMap();
-                </script>
-             </div>
+            <div id="completa">
+                <img src="img/logo.png" id="logo">
+                <span id="preco">COMPLETA <br> R$30,00</span>
+                <img src="img/informacao.png" id="info">
+            </div>
         </div>  
     </body>
 </html>
