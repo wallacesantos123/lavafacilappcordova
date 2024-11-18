@@ -48,9 +48,48 @@ body {
 }
 
 #container #map {
-    width: 100%;
+    width: 99.5%;
     margin-top: 20.9%;
-    padding-bottom: 150%;
+    padding-bottom: 122.5%;
     position: absolute;
     border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#container #lav_select {
+    width: 99.5%;
+    position: absolute;
+    margin-top: 145%;
+}
+
+#container #lav_select #logo {
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-bottom: 2.5%;
+}
+
+#container #lav_select #nome {
+    font-weight: bold;
+    font-size: medium;
+    position: absolute;
+    margin-top: 7.5%;
+    margin-left: 2.5%;
+}
+
+#container #lav_select #avaliacao {
+    width: 45%;
+    position: absolute;
+    margin-top: 12.5%;
+    margin-left: -2.5%;
+}
+
+#container #lav_select #ir_bt {
+    float: right;
+    width: 25%;
+    background-color: #000;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    margin-top: -1%;
+    margin-right: 0%;
 }

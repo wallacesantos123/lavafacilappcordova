@@ -67,6 +67,13 @@
                     initMap();
                 </script>
              </div>
+
+             <div id="lav_select">
+                <img src="img/logo.png" id="logo">
+                <span id="nome">SUAVE NA NAVE</span>
+                <img src="img/avaliacao0.png" id="avaliacao">
+                <img src="img/ir_bt.png" id="ir_bt">
+            </div>
         </div>  
     </body>
 </html>
