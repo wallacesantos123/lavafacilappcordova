@@ -33,57 +33,32 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <!--<link rel="stylesheet" type="text/css" href="css/map.css" />-->
-        <link rel="stylesheet" href="css/menu.css?v=0">
-        <script src="js/map.js"></script>
-        <script src="js/map_conf.js"></script>
-        <title>LavaFacilApp - Menu</title>
+        <link rel="stylesheet" href="css/iniciar.css?v=0">
+        <title>LavaFacilApp - Iniciar</title>
     </head>
 
     <body>
         <div id="container">
-             <a href="lavagens.php">
-                <div id="lavagens">
-                    <label>Lavagens</label>
-                </div>
-             </a>
-            
-             <a href="lava_rapidos.php">
-                <div id="lavarapidos">
-                    <label>Lava-Rap</label>
-                </div>
-             </a>
-             
-             <div id="historico">
-                <label>Historico</label>
-             </div>
-
-             <div id="configuracoes">
-                <label>Config</label>
-             </div>
-
-             <div id="map">
-                <script>
-                    mapConf();
-                    initMap();
-                </script>
-             </div>
-
-             <div id="lav_select">
-                <img src="img/logo.png" id="logo">
-                <span id="nome">SUAVE NA NAVE</span>
-                <img src="img/avaliacao0.png" id="avaliacao">
-                <a href="iniciar.php"><img src="img/ir_bt.png" id="ir_bt"></a> 
-            </div>
+            <form action="#">
+                <h3>Confirmação de Lavagem</h3>
+                <span>Lava-Rapido: suave na nave</span>
+                <br>
+                <span>Lavagem: ducha</span>
+                <br>
+                <span>Aspiração: não</span>
+                <br>
+                <span>Pretinho: sim</span>
+                <br>
+                <span>Produto: não</span>
+                <br>
+                <span>Motor: não</span>
+                <br>
+                <span>Valor: R$10,00</span>
+                <br>
+                <span>Forma de Pagamento: dinheiro</span>
+                <br>
+                <button type="submit" id="iniciar">CONFIRMAR</button>
+            </form>
         </div>  
-
-        <span class="options">Lavagem: ducha</span>
-        <br>
-        <span class="options">Aspiração: não</span>
-        <br>
-        <span class="options">Pretinho: não</span>
-        <br>
-        <span class="options">Produto: não</span>
-        <br>
-        <span class="options">Motor: não</span>
     </body>
 </html>

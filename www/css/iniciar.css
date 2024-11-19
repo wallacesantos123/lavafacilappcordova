@@ -1,0 +1,25 @@
+body {
+    margin: 0%;
+    background: linear-gradient(#FFF, #000);
+}
+
+#container {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: #FFFAFA;
+    padding-top: 25%;
+    padding-bottom: 55.8%;
+}
+
+#container #iniciar {
+    font-size: large;
+    font-weight: bold;
+    color: #FFFAFA;
+    padding-top: 5%;
+    padding-left: 30%;
+    padding-bottom: 5%;
+    padding-right: 30%;
+    margin-top: 5%;
+    background: linear-gradient(to bottom right, #000, #FFF);
+}

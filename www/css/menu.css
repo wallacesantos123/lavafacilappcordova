@@ -8,12 +8,20 @@ body {
     overflow-x: hidden;
 }
 
+body .options {
+    position: absolute;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 20%;
+    margin-left: -98%;
+}
+
 #container #lavagens {
     width: 24.5%;
     float: left;
     text-align: center;
     padding-top: 8%;
-    padding-bottom: 8%;
+    padding-bottom: 6.5%;
     font-weight: bolder;
     border-right: 1px solid #000;
 }
@@ -23,7 +31,7 @@ body {
     float: left;
     text-align: center;
     padding-top: 8%;
-    padding-bottom: 8%;
+    padding-bottom: 6.5%;
     font-weight: bolder;
     border-right: 1px solid #000;
 }
@@ -33,7 +41,7 @@ body {
     float: left;
     text-align: center;
     padding-top: 8%;
-    padding-bottom: 8%;
+    padding-bottom: 6.5%;
     font-weight: bolder;
     border-right: 1px solid #000;
 }
@@ -49,10 +57,9 @@ body {
 
 #container #map {
     width: 99.5%;
-    margin-top: 20.9%;
-    padding-bottom: 122.5%;
+    margin-top: 19.5%;
+    padding-bottom: 123.8%;
     position: absolute;
-    border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 }
 
@@ -60,11 +67,12 @@ body {
     width: 99.5%;
     position: absolute;
     margin-top: 145%;
+    margin-left: 0.3%;
 }
 
 #container #lav_select #logo {
     width: 25%;
-    margin-top: 5%;
+    margin-top: 6%;
     margin-left: 1%;
     margin-bottom: 2.5%;
 }
@@ -73,14 +81,14 @@ body {
     font-weight: bold;
     font-size: medium;
     position: absolute;
-    margin-top: 7.5%;
+    margin-top: 8%;
     margin-left: 2.5%;
 }
 
 #container #lav_select #avaliacao {
     width: 45%;
     position: absolute;
-    margin-top: 12.5%;
+    margin-top: 14%;
     margin-left: -2.5%;
 }
 
@@ -89,7 +97,9 @@ body {
     width: 25%;
     background-color: #000;
     padding-top: 5%;
-    padding-bottom: 3%;
+    padding-left: 2%;
+    padding-bottom: 7.5%;
+    padding-right: 2%;
     margin-top: -1%;
     margin-right: 0%;
 }
