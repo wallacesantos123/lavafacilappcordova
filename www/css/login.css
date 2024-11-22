@@ -37,10 +37,19 @@
     margin-top: 15%;
 }
 
+#container #aviso {
+    display: block;
+    color: red;
+    font-size: small;
+    font-weight: bolder;
+    margin-top: 13.6%;
+    margin-bottom: -25%;
+}
+
 #container #email {
     width: 85%;
-    margin-top: 20%;
     padding: 3%;
+    margin-top: 20%;
     background-color: #FFF;
     color: #000;
     border: 3px solid #000;
@@ -85,4 +94,3 @@
     font-size: 100%;
     font-weight: bold;
 }
-

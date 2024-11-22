@@ -1,0 +1,81 @@
+body {
+    margin: 0%;
+    background: linear-gradient(to left, #FFF, #000);
+}
+
+#container {
+    text-align: center;
+    color: #CFCFCF;
+}
+
+#container #txtemail {
+    margin-right: 75%;
+    font-weight: bolder;
+}
+
+#container #email {
+    width: 90%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 175%;
+    font-weight: bolder;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    background-color: #F5F5F5;
+}
+
+#container #txtcel {
+    margin-right: 70%;
+    font-weight: bolder;
+}
+
+#container #cel {
+    width: 90%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 175%;
+    font-weight: bolder;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    background-color: #F5F5F5;
+}
+
+#container #txtpass {
+    margin-right: 76%;
+    font-weight: bolder;
+}
+
+#container #pass {
+    width: 90%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 175%;
+    font-weight: bolder;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    background-color: #F5F5F5;
+}
+
+#container #txtconfpass {
+    margin-right: 48%;
+    font-weight: bolder;
+}
+
+#container #confpass {
+    width: 90%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 175%;
+    font-weight: bolder;
+    margin-top: 1%;
+    margin-bottom: 10%;
+    background-color: #F5F5F5;
+}
+
+#container #cadastrar {
+    width: 80%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: large;
+    font-weight: bolder;
+}

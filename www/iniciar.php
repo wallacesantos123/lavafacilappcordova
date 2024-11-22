@@ -41,21 +41,21 @@
         <div id="container">
             <form action="#">
                 <h3>Confirmação de Lavagem</h3>
-                <span>Lava-Rapido: suave na nave</span>
+                <span name="lavarapido">Lava-Rapido: suave na nave</span>
                 <br>
-                <span>Lavagem: ducha</span>
+                <span name="lavagem">Lavagem: ducha</span>
                 <br>
-                <span>Aspiração: não</span>
+                <span name="aspiracao">Aspiração: não</span>
                 <br>
-                <span>Pretinho: sim</span>
+                <span name="pretinho">Pretinho: sim</span>
                 <br>
-                <span>Produto: não</span>
+                <span name="produto">Produto: não</span>
                 <br>
-                <span>Motor: não</span>
+                <span name="motor">Motor: não</span>
                 <br>
-                <span>Valor: R$10,00</span>
+                <span name="valor">Valor: R$10,00</span>
                 <br>
-                <span>Forma de Pagamento: dinheiro</span>
+                <span name="pagamento">Forma de Pagamento: dinheiro</span>
                 <br>
                 <button type="submit" id="iniciar">CONFIRMAR</button>
             </form>

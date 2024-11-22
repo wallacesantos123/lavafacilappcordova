@@ -33,22 +33,46 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/login.css?v=1">
+        <link rel="stylesheet" href="css/login.css?v=5">
         <title>LavaFacilApp - Login</title>
     </head>
     <body>
-        <div id="container">
-            <form action="menu.php">
-                <img src="img/logo.png" alt="logo" id="logo">
-                <br>
-                <input name="email" type="email" placeholder="Email" id="email"/>
-                <br>
-                <input name="password" type="password" placeholder="Senha" id="password"/>
-                <br>
-                <button name="enter" type="submit" id="enter">ENTRAR</button>
-                <br> 
-                <button name="enter_cel" type="button" id="enter_cel">ENTRAR COM CELULAR</button>
-            </form>  
-        </div>
+        <?php
+            if(isset($_GET["login"]) && $_GET["login"] == "falhou") {
+                print('
+                    <div id="container">
+                        <form action="logar.php" method="post">
+                            <img src="img/logo.png" alt="logo" id="logo">
+                            <br>
+                            <span id="aviso">EMAIL OU SENHA INCORRETO!!!</span>
+                            <br>
+                            <input name="email" type="email" placeholder="Email" id="email"/>
+                            <br>
+                            <input name="password" type="password" placeholder="Senha" id="password"/>
+                            <br>
+                            <button name="enter" type="submit" id="enter">ENTRAR</button>
+                            <br> 
+                            <button name="enter_cel" type="button" id="enter_cel">ENTRAR COM CELULAR</button>
+                        </form>  
+                    </div>
+                ');
+            } else {
+                print('
+                    <div id="container">
+                        <form action="logar.php" method="post">
+                            <img src="img/logo.png" alt="logo" id="logo">
+                            <br>
+                            <input name="email" type="email" placeholder="Email" id="email"/>
+                            <br>
+                            <input name="password" type="password" placeholder="Senha" id="password"/>
+                            <br>
+                            <button name="enter" type="submit" id="enter">ENTRAR</button>
+                            <br> 
+                            <button name="enter_cel" type="button" id="enter_cel">ENTRAR COM CELULAR</button>
+                        </form>  
+                    </div>
+                ');
+            }
+        ?>
     </body>
 </html>

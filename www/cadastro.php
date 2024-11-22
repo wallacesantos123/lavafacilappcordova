@@ -32,19 +32,32 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/cadastro.css">
         <title>LavaFacilApp</title>
     </head>
     <body>
-        
-        
         <div id="container">
-            <img src="img/logo.png" alt="logo" id="logo">
-            <br>
-            <a href="login.php"><button type="button" id="enter" onclick="funcao1" >ENTRAR</button></a>
-            <br>
-            <a href="cadastro.php"><button type="button" id="register">CADASTRAR</button></a>
+            <form action="cadastrar.php" method="post">
+                <h2>CADASTRO</h2>
+                <h3>INFORMAÇÕES PESSOAIS</h3>
+                <span id="txtemail">E-MAIL:</span>
+                <br>
+                <input name="email" type="email" id="email">
+                <br>
+                <span id="txtcel">CELULAR:</span>
+                <br>
+                <input name="cel" type="tel" id="cel">
+                <br>
+                <span id="txtpass">SENHA:</span>
+                <br>
+                <input name="pass" type="password" id="pass">
+                <br>
+                <span id="txtconfpass">CONFIRMAR SENHA:</span>
+                <br>
+                <input name="confpass" type="password" id="confpass">
+                <br>
+                <button name="cadastrar" type="submit" id="cadastrar">CADASTRAR</button>
+            </form>
         </div>
     </body>
 </html>
